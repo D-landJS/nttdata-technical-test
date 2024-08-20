@@ -1,0 +1,38 @@
+.app {
+	padding: 1.5rem;
+	max-width: 64rem;
+	margin: 0 auto;
+}
+
+.app__title {
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.app__spinner {
+	width: 4rem;
+	height: 4rem;
+	border-top: 4px solid #3b82f6;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid transparent;
+	border-radius: 9999px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.app__error-message {
+	text-align: center;
+	font-size: 1.125rem;
+	color: #ef4444;
+}
